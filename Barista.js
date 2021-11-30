@@ -1,4 +1,4 @@
-const Manager = require("./Manager.js");
+const DashBoard = require("./DashBoard.js");
 const menu = require("./menu.js");
 
 class Barista {
@@ -44,9 +44,7 @@ class Barista {
       },
     };
 
-    console.dir(Manager);
-
-    Manager.updateWaitingListBoard(obj);
+    DashBoard.addToDashBoard(obj);
   }
 
   updateStatus(isStart) {
